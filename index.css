@@ -1,9 +1,9 @@
 /* Header Section Style */
 body{
     width: 1320px;
-    height: 600px;
+    height: 100%;
     border-radius: 16px;
-    margin: 50px 50px 50px 50px;
+    margin: 50px 20px 80px 50px;
 }
 header{
     /* padding: 60px 130px; */
@@ -69,7 +69,9 @@ ul{
 }
 .input-container{
     align-items: center;
-    padding-left: 220px;
+    /* padding: 30px 120px; */
+    /* border-radius: 8px; */
+    /* background: rgba(255, 255, 255, 0.30); */
 }
 input{
     width: 170px;
@@ -79,6 +81,9 @@ input{
     border-radius: 8px;
     font-weight: 400;
     background: #FFF;
+}
+input > section > option{
+    align-items: center;
 }
 #time{
     color: rgba(19, 19, 24, 0.50);
@@ -97,6 +102,51 @@ input{
     width: 174px;
     height: 52px;
 }
+/* popular part Style */
+.popular-unorderd-list{
+    display: inline;
+}
+.popular-tour-container{
+    display: flex;
+    width: 1170px;
+    margin-top: 75px;
+    margin-left: 48px;
+    gap: 100px;
+}
+.popular-tour-div{
+    padding-left: 50px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 20px;
+    font-weight: 400;
+    /* background-color: #FF5400; */
+}
+.hill{
+    width: 540px;
+    height: 550px;
+}
+/* third pera style */
+.third-pera-div{
+    text-align: center;
+    margin-top: 50px;
+}
+.all-image{
+    width: 1170px;
+    padding-left: 66px;
+   /* display: grid; */
+}
+.first-row{
+    grid-template-columns: repeat(2,1fr);
+}
+.second-row{
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+.third-row{
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
 /* Responsive Header Section */
 @media screen and (max-width:600px) {
     .header-container{
