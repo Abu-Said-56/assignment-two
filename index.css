@@ -35,6 +35,8 @@ span{
 ul{
     display: flex;
 }
+
+
 /* Banner section Style */
 
 .banner-section{
@@ -68,7 +70,10 @@ ul{
     border: 0;
 }
 .input-container{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     /* padding: 30px 120px; */
     /* border-radius: 8px; */
     /* background: rgba(255, 255, 255, 0.30); */
@@ -102,7 +107,9 @@ input > section > option{
     width: 174px;
     height: 52px;
 }
-/* popular part Style */
+
+
+/* popular Tours Style */
 .popular-unorderd-list{
     display: inline;
 }
@@ -124,37 +131,51 @@ input > section > option{
     width: 540px;
     height: 550px;
 }
-/* third pera style */
-.third-pera-div{
+
+
+/* Destination Styles */
+.destination-section{
+    width: 93%;
+    margin: 20px auto;
+}
+/* .destination-header{
     text-align: center;
-    margin-top: 50px;
+    width: 480px;
+} */
+.destination-title{
+    text-align: center;
+}
+.destination-description{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 443px;
 }
 .all-image{
-    width: 1170px;
-    padding-left: 66px;
-   /* display: grid; */
+    display: grid;
+    gap: 24px;
 }
 .first-row{
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    gap: 24px;
 }
 .second-row{
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
     gap: 24px;
 }
 .third-row{
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    gap: 24px;
 }
 
 
-
 /* Responsive Header Section */
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
     .header-container{
       flex-direction: column;
     }
     ul{
         flex-direction: column;
-        /* padding-bottom: 10px; */
     }
 
-}
+} */
