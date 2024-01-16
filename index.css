@@ -3,7 +3,7 @@ body{
     width: 1320px;
     height: 100%;
     border-radius: 16px;
-    margin: 50px 20px 80px 50px;
+    margin: 0px 20px 80px 50px;
 }
 
 header{
@@ -149,6 +149,9 @@ input > section > option{
     margin: auto;
     margin-bottom: 20px;
     width: 443px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400; 
 }
 .all-image{
     display: grid;
@@ -168,20 +171,27 @@ input > section > option{
 }
 
 /* Chose file sction  */
+.choose-section{
+    width: 1170px;
+}
 .hotel-and-sarvice-div{
     display: flex;
     max-width: 1170px;
     margin: 0 auto;
     gap: 25px;
 }
+.hotel-image{
+    height: 40%;
+    width: 20%;
+}
 .hotel-div{
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     width: 573px;
-    height: 284px;
-    /* padding-left: 20px;
-    padding-top: 100px; */
+    height: 284px; 
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .hotel-title{
     color: #131318;
@@ -196,14 +206,18 @@ input > section > option{
     line-height: 26px;
     width: 486px;
 }
+.sarvice-image{
+    height: 40%;
+    width: 20%; 
+}
 .sarvice-div{
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
     width: 573px;
     height: 284px;
-    /* padding-left: 20px;
-    padding-top: 100px; */
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .sarvice-title{
     color: #131318;
@@ -217,9 +231,13 @@ input > section > option{
     font-weight: 400;
     line-height: 26px;
 }
+.price-image{
+    height: 40%;
+    width: 20%;     
+}
 .price-div{
-    /* padding-left: 20px;
-    padding-top: 100px; */
+    padding-left: 20px;
+    padding-top: 20px;
     justify-content: center;
     width: 573px;
     height: 284px;
@@ -228,6 +246,7 @@ input > section > option{
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
+
 .price-title{
     color: #131318;
     font-size: 24px;
@@ -255,6 +274,12 @@ input > section > option{
     border-radius: 16px;
     border: 1px solid #FF5400;  
     padding-left: 20px; 
+}
+.newslatter-description{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
 }
 .input-write{
     width: 393px;
@@ -286,22 +311,55 @@ input > section > option{
     background: #FF5400;
 }
 /* website-footer styles */
-.website-footer{
-    margin-top: 100px;
+.footer-section{
+    margin-left: 100px;
+    padding-top: 20px;
+    width: 1170px;
+    height: 502px;
+    border-radius: 5px;
+    background: rgba(19, 19, 24, 0.05);  
+}
+.footer-title{
     display: flex;
-    gap: 10px;  
     justify-content: center;
+    padding-bottom: 20px;
+}
+.footer-description{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.social-icon{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.copyrite{
+    padding-top: 70px;
+    text-align: center;
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 
-
 /* Responsive Header Section */
-/* @media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
     .header-container{
       flex-direction: column;
     }
     ul{
         flex-direction: column;
     }
-
-} */
+    .banner-section{
+        /* display: grid; */
+        flex-direction: column;
+        grid-template-columns: repeat(1 1fr);
+    }
+}
